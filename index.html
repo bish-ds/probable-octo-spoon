@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <style>
+        /* CSS Code */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        #main-content {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Page</h1>
+    </header>
+
+    <div id="main-content">
+        <h2>Welcome to our Web Page!</h2>
+        <p>This is business.</p>
+        <button id="click-me">Click Me!</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        // JavaScript Code
+        document.getElementById("click-me").addEventListener("click", function() {
+            document.getElementById("demo").innerHTML = "You clicked the button!";
+        });
+    </script>
+</body>
+</html>
